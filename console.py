@@ -99,9 +99,7 @@ class HBNBCommand(cmd.Cmd):
             storage.save()
 
     def do_show(self, arg):
-        """Usage: show  string representation of a class instance of 
-        a given id.
-        """
+        """Usage: show  string representation of a class instance"""
         argl = parse(arg)
         objdict = storage.all()
         if len(argl) == 0:
